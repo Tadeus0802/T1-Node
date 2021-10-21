@@ -85,9 +85,7 @@ const arr_movies = [
 ] 
 
 app.get('/',function(req,res) {
-    for(let i=0; i<arr_movies.length;i++){
-        res.send(arr_movies[i])
-    }
+    res.send(arr_movies);
 })
 
 app.get('/movies/:code',function(req,res) {
