@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 const arr_movies = [
     {
-        name:"Vemon",
+        name:"Venom",
         code:1,
         year:2018,
         genre:["action", "cience fiction","SuperHereos","Suspense"],
@@ -67,11 +67,11 @@ const arr_movies = [
         views:100000,
     },
     {
-        name:"Marley & Me",
+        name:"Skate of glory",
         code:9,
         year:2008,
-        genre:["Romance","Comedy"],
-        director:"David Frankel",
+        genre:["Sports","Comedy"],
+        director:"Josh Gordon",
         views:1,
     },
     {
@@ -85,7 +85,7 @@ const arr_movies = [
 ] 
 
 app.get('/',function(req,res) {
-    res.send(arr_movies);
+    res.send(arr_movies);    
 })
 
 app.get('/movies/:code',function(req,res) {
