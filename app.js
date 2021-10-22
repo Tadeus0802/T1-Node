@@ -90,7 +90,7 @@ app.get('/',function(req,res) {
 
 app.get('/movies/:code',function(req,res) {
     let i = req.params.code;
-    res.send(arr_movies[i-1]);
+    res.send(arr_movies.find(e=>e.code==i));
 })
 
 app.get('/movies',function(req,res){
